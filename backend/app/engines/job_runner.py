@@ -18,9 +18,13 @@ def load_fixture(path: Path) -> dict[str, Any]:
 
 def run_fixture_job(path: Path) -> dict[str, Any]:
     payload = load_fixture(path)
+    flags = payload.get("flags") or {}
+    if not isinstance(flags, dict):
+        raise ValueError("fixture flags must be an object when present")
     return {
         "ok": True,
         "watermark_ts": payload["watermark_ts"],
         "artifact_rows": len(payload["rows"]),
+        "flags": flags,
         "sample": payload["rows"][:3],
     }

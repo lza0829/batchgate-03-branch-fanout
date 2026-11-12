@@ -1,0 +1,10 @@
+{
+  "watermark_ts": "2026-11-10T18:20:00Z",
+  "flags": {
+    "replayed": true
+  },
+  "rows": [
+    {"order_id": "O-2", "retry_reason": "timeout", "amount": 88.0},
+    {"order_id": "O-3", "retry_reason": "timeout", "amount": 15.0}
+  ]
+}

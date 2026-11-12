@@ -1,0 +1,9 @@
+{
+  "watermark_ts": "2026-11-10T19:20:00Z",
+  "rows": [
+    {"biz_date": "2026-11-07", "order_count": 47, "amount_sum": 5830.2},
+    {"biz_date": "2026-11-08", "order_count": 60, "amount_sum": 7012.9},
+    {"biz_date": "2026-11-09", "order_count": 38, "amount_sum": 4401.1},
+    {"biz_date": "2026-11-10", "order_count": 3, "amount_sum": 223.5}
+  ]
+}
